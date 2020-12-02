@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Homework12 {
-   /** @Test
+    @Test
     public void verifySummaruyTemp(){
         /**
          * Launch darksky.net
@@ -16,7 +16,7 @@ public class Homework12 {
          * get the text from the element
          * verify temp value is more than 10
          */
-        /**System.setProperty("webdriver.chrome.driver","./DriverExe/chromedriver");
+        System.setProperty("webdriver.chrome.driver","./DriverExe/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.darksky.net");
         String feelsLike = "//span[@class='feels-like-text']";
@@ -39,7 +39,7 @@ public class Homework12 {
         Assert.assertTrue(feelTempInt>lowTempInt,"Feel temp is not greater than low temp");
         Assert.assertTrue(feelTempInt<highTempInt,"Feel temp is not less than high temp");
 
-    }*/
+    }
     //testcase-3
     @Test
     public void verifyDates(){
